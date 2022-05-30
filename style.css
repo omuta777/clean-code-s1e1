@@ -1,0 +1,158 @@
+/* Basic Style */
+.page {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+.header-img {
+  width: 100%;
+}
+.header-info {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, cursive;
+}
+
+@media (max-width:768px) {
+
+  .header {  
+    text-align: center;
+  }
+
+}
+.main {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+.new-task-wrapper {
+  display: flex;
+}
+#todo-list,
+#completed-tasks {
+  margin: 0;
+  padding: 0px;
+}
+.todo-container, 
+.edit-mode,
+.completed-mode {
+  list-style: none;
+}
+.checkbox, 
+.text-area {
+  outline: none;
+}
+.add-button,
+.delete,
+.edit {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+.add-button:hover,
+.delete:hover,
+.edit:hover {
+  color: #3a3a3a;
+}
+/* Heading */
+.heading,
+.heading1 {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.text-area {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px; 
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  color: #888;
+}
+.text-area:focus {
+  color: #333;
+}
+
+/* New Task */
+.heading1 {
+  display: block;
+  margin: 0 0 20px;
+}
+#new-task {
+  width: 318px;
+}
+
+/* Task list */
+.list {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list > * {
+  vertical-align: middle;
+}
+
+.checkbox {
+  margin: 0 10px;
+}
+.task {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+.text-area {
+  width: 226px;
+}
+.delete-img {   
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+.delete-img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+.completed-task {
+  text-decoration: line-through;
+  color: #888;
+} 
+
+/* Task */
+.list .text-area {
+  display: none;
+}
+
+.edit-mode .text-area {
+  display: inline-block;
+  width: 224px;
+}
+
+.edit-mode .edit-task {
+  display: none;
+}
